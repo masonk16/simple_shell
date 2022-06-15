@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * strcat_cd - function that concatenates the message for cd error
  *
@@ -36,7 +37,6 @@ char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
 	_strcat(error, "\0");
 	return (error);
 }
-
 /**
  * error_get_cd - error message for cd command in get_cd
  * @datash: data relevant (directory)
@@ -107,7 +107,6 @@ char *error_not_found(data_shell *datash)
 	free(ver_str);
 	return (error);
 }
-
 /**
  * error_exit_shell - generic error message for exit in get_exit
  * @datash: data relevant (counter, arguments)
